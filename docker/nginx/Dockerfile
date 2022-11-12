@@ -5,7 +5,7 @@ COPY default.conf /etc/nginx/conf.d/
 
 RUN apk update && apk upgrade && apk add --no-cache bash
 
-ARG PHP_UPSTREAM_CONTAINER=php-fpm
+ARG PHP_UPSTREAM_CONTAINER=php-fpm-symfony-ddd
 ARG PHP_UPSTREAM_PORT=9000
 
 RUN set -x ; \

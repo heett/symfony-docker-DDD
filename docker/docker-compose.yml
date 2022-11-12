@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   php-fpm:
-    container_name: php-fpm
+    container_name: php-fpm-symfony-ddd
     build:
       context: ./../
       dockerfile: ./docker/php-fpm/Dockerfile
@@ -13,7 +13,7 @@ services:
       - ./../:/var/www/
 
   nginx:
-    container_name: nginx
+    container_name: nginx-symfony-ddd
     build:
       context: ./nginx
     ports:
